@@ -4,9 +4,11 @@ import android.graphics.drawable.Drawable
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.spring
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.Arrangement
@@ -80,6 +82,7 @@ import com.salmantoha.neolauncher.ui.theme.TextSecondary
 /**
  * Neo-Brutalist Card with solid offset black shadow and crisp border.
  */
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun NeoBrutalCard(
     modifier: Modifier = Modifier,
@@ -99,25 +102,10 @@ fun NeoBrutalCard(
         animationSpec = spring(dampingRatio = 0.6f, stiffness = 400f),
         label = "press_scale"
     )
+    val interactionSource = remember { androidx.compose.foundation.interaction.MutableInteractionSource() }
 
     Box(
-        modifier = modifier
-            .scale(scale)
-            .then(
-                if (onClick != null || onLongClick != null) {
-                    Modifier.pointerInput(Unit) {
-                        detectTapGestures(
-                            onPress = {
-                                isPressed = true
-                                tryAwaitRelease()
-                                isPressed = false
-                            },
-                            onTap = { onClick?.invoke() },
-                            onLongPress = { onLongClick?.invoke() }
-                        )
-                    }
-                } else Modifier
-            )
+        modifier = modifier.scale(scale)
     ) {
         // Hard Shadow Layer (Offset)
         Box(
@@ -133,6 +121,31 @@ fun NeoBrutalCard(
                 .background(backgroundColor, shape)
                 .border(borderWidth, borderColor, shape)
                 .clip(shape)
+                .then(
+                    if (onClick != null && onLongClick != null) {
+                        Modifier.combinedClickable(
+                            interactionSource = interactionSource,
+                            indication = null,
+                            onClick = onClick,
+                            onLongClick = onLongClick
+                        )
+                    } else if (onClick != null) {
+                        Modifier.clickable(
+                            interactionSource = interactionSource,
+                            indication = null,
+                            onClick = onClick
+                        )
+                    } else if (onLongClick != null) {
+                        Modifier.combinedClickable(
+                            interactionSource = interactionSource,
+                            indication = null,
+                            onClick = {},
+                            onLongClick = onLongClick
+                        )
+                    } else {
+                        Modifier
+                    }
+                )
         ) {
             content()
         }
@@ -229,6 +242,7 @@ fun NeoTelemetryBar(
     batteryLevel: Int,
     isCharging: Boolean,
     appCount: Int,
+    onControlCenterClick: () -> Unit,
     onSettingsClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -239,11 +253,12 @@ fun NeoTelemetryBar(
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
-        // [STATUS: ONLINE]
+        // [STATUS: ONLINE] (Tap opens Control Center)
         NeoBrutalCard(
             shadowOffset = 2.dp,
             cornerRadius = 8.dp,
-            borderWidth = 1.5.dp
+            borderWidth = 1.5.dp,
+            onClick = onControlCenterClick
         ) {
             Row(
                 modifier = Modifier.padding(horizontal = 10.dp, vertical = 5.dp),
@@ -271,11 +286,12 @@ fun NeoTelemetryBar(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            // Battery pill
+            // Battery pill (Tap opens Control Center)
             NeoBrutalCard(
                 shadowOffset = 2.dp,
                 cornerRadius = 8.dp,
-                borderWidth = 1.5.dp
+                borderWidth = 1.5.dp,
+                onClick = onControlCenterClick
             ) {
                 Row(
                     modifier = Modifier.padding(horizontal = 8.dp, vertical = 5.dp),

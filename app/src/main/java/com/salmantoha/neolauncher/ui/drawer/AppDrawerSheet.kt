@@ -9,7 +9,9 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
@@ -65,7 +67,9 @@ fun AppDrawerScreen(
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(top = 48.dp, start = 16.dp, end = 16.dp, bottom = 16.dp)
+                .statusBarsPadding()
+                .navigationBarsPadding()
+                .padding(top = 8.dp, start = 16.dp, end = 16.dp, bottom = 8.dp)
         ) {
             // Search Bar
             NeoSearchBar(

@@ -6,7 +6,9 @@ import android.content.IntentFilter
 import android.os.BatteryManager
 import android.provider.AlarmClock
 import androidx.compose.foundation.background
-import androidx.compose.foundation.gestures.detectVerticalDragGestures
+import androidx.compose.foundation.gestures.Orientation
+import androidx.compose.foundation.gestures.draggable
+import androidx.compose.foundation.gestures.rememberDraggableState
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -15,7 +17,9 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
@@ -28,7 +32,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.salmantoha.neolauncher.model.AppItem
@@ -77,7 +80,7 @@ fun HomeScreen(
     }
 
     // Battery Telemetry
-    var batteryLevel by remember { mutableIntStateOf(85) }
+    var batteryLevel by remember { mutableIntStateOf(100) }
     var isCharging by remember { mutableStateOf(false) }
 
     LaunchedEffect(Unit) {
@@ -87,42 +90,44 @@ fun HomeScreen(
         batteryStatus?.let { intent ->
             val level = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, -1)
             val scale = intent.getIntExtra(BatteryManager.EXTRA_SCALE, -1)
-            batteryLevel = if (level != -1 && scale != -1) (level * 100 / scale) else 85
+            batteryLevel = if (level != -1 && scale != -1) (level * 100 / scale) else 100
             val status = intent.getIntExtra(BatteryManager.EXTRA_STATUS, -1)
             isCharging = status == BatteryManager.BATTERY_STATUS_CHARGING || status == BatteryManager.BATTERY_STATUS_FULL
         }
     }
 
-    // Gesture detection (Swipe UP -> Drawer, Swipe DOWN -> Notifications)
-    var dragAccumulator by remember { mutableStateOf(0f) }
+    var dragOffsetY by remember { mutableStateOf(0f) }
 
     Box(
         modifier = modifier
             .fillMaxSize()
             .background(BgAmoled)
-            .pointerInput(Unit) {
-                detectVerticalDragGestures(
-                    onDragStart = { dragAccumulator = 0f },
-                    onDragEnd = {
-                        if (dragAccumulator < -80f) {
+    ) {
+        NeoDotGridBackground(
+            modifier = Modifier
+                .fillMaxSize()
+                .draggable(
+                    orientation = Orientation.Vertical,
+                    state = rememberDraggableState { delta ->
+                        dragOffsetY += delta
+                    },
+                    onDragStopped = {
+                        if (dragOffsetY < -60f) {
                             onOpenDrawer()
-                        } else if (dragAccumulator > 80f) {
+                        } else if (dragOffsetY > 60f) {
                             onOpenControlCenter()
                         }
-                        dragAccumulator = 0f
-                    },
-                    onVerticalDrag = { _, dragAmount ->
-                        dragAccumulator += dragAmount
+                        dragOffsetY = 0f
                     }
                 )
-            }
-    ) {
-        NeoDotGridBackground()
+        )
 
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(top = 40.dp, bottom = 12.dp),
+                .statusBarsPadding()
+                .navigationBarsPadding()
+                .padding(top = 8.dp, bottom = 8.dp),
             verticalArrangement = Arrangement.SpaceBetween
         ) {
             Column(modifier = Modifier.fillMaxWidth()) {
@@ -131,6 +136,7 @@ fun HomeScreen(
                     batteryLevel = batteryLevel,
                     isCharging = isCharging,
                     appCount = allApps.size,
+                    onControlCenterClick = onOpenControlCenter,
                     onSettingsClick = onOpenSettings
                 )
 
@@ -167,7 +173,7 @@ fun HomeScreen(
                         humidity = "64%",
                         modifier = Modifier.weight(1f),
                         onClick = {
-                            // Weather intent or browser
+                            onOpenControlCenter()
                         }
                     )
                 }
