@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Neo Launcher</string>
+    <string name="status_online">STATUS: ONLINE</string>
+    <string name="search_placeholder">SEARCH ALL APPS...</string>
+    <string name="pin_to_home">PIN TO HOME</string>
+    <string name="unpin_from_home">UNPIN</string>
+    <string name="app_info">APP INFO</string>
+    <string name="uninstall">UNINSTALL</string>
+</resources>

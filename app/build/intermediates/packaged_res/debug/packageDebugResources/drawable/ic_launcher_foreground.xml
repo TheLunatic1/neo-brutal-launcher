@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Solid Shadow Card -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M30,30h52v52h-52z" />
+    <!-- Neo-Brutal Front Card -->
+    <path
+        android:fillColor="#141D2E"
+        android:pathData="M26,26h52v52h-52z" />
+    <!-- Border -->
+    <path
+        android:strokeColor="#6366F1"
+        android:strokeWidth="2.5"
+        android:pathData="M26,26h52v52h-52z" />
+    <!-- Neo Brutal Dot -->
+    <path
+        android:fillColor="#34D399"
+        android:pathData="M36,36h8v8h-8z" />
+    <!-- Inner Accent Line -->
+    <path
+        android:strokeColor="#FBBF24"
+        android:strokeWidth="3"
+        android:pathData="M50,40h18" />
+    <path
+        android:strokeColor="#F8FAFC"
+        android:strokeWidth="3"
+        android:pathData="M36,54h32" />
+    <path
+        android:strokeColor="#6366F1"
+        android:strokeWidth="3"
+        android:pathData="M36,64h22" />
+</vector>

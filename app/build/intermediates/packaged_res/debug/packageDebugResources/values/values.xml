@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_amber">#FBBF24</color>
+    <color name="accent_emerald">#34D399</color>
+    <color name="accent_indigo">#6366F1</color>
+    <color name="accent_rose">#F43F5E</color>
+    <color name="bg_amoled">#0B0F19</color>
+    <color name="card_bg">#141D2E</color>
+    <color name="card_border">#73FFFFFF</color>
+    <color name="hard_shadow">#000000</color>
+    <string name="app_info">APP INFO</string>
+    <string name="app_name">Neo Launcher</string>
+    <string name="pin_to_home">PIN TO HOME</string>
+    <string name="search_placeholder">SEARCH ALL APPS...</string>
+    <string name="status_online">STATUS: ONLINE</string>
+    <string name="uninstall">UNINSTALL</string>
+    <string name="unpin_from_home">UNPIN</string>
+    <style name="Theme.NeoBrutalLauncher" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/bg_amoled</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowShowWallpaper">false</item>
+    </style>
+</resources>

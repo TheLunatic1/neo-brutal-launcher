@@ -1,0 +1,22 @@
+R_DEF: Internal format may change without notice
+local
+color accent_amber
+color accent_emerald
+color accent_indigo
+color accent_rose
+color bg_amoled
+color card_bg
+color card_border
+color hard_shadow
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_info
+string app_name
+string pin_to_home
+string search_placeholder
+string status_online
+string uninstall
+string unpin_from_home
+style Theme.NeoBrutalLauncher

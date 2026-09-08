@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_amoled">#0B0F19</color>
+    <color name="card_bg">#141D2E</color>
+    <color name="card_border">#73FFFFFF</color>
+    <color name="hard_shadow">#000000</color>
+    <color name="accent_indigo">#6366F1</color>
+    <color name="accent_emerald">#34D399</color>
+    <color name="accent_amber">#FBBF24</color>
+    <color name="accent_rose">#F43F5E</color>
+</resources>
