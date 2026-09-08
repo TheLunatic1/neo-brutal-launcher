@@ -51,7 +51,7 @@ fun HomeScreen(
     onAppClick: (AppItem) -> Unit,
     onAppLongClick: (AppItem) -> Unit,
     onOpenDrawer: () -> Unit,
-    onExpandNotifications: () -> Unit,
+    onOpenControlCenter: () -> Unit,
     onOpenSettings: () -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -107,7 +107,7 @@ fun HomeScreen(
                         if (dragAccumulator < -80f) {
                             onOpenDrawer()
                         } else if (dragAccumulator > 80f) {
-                            onExpandNotifications()
+                            onOpenControlCenter()
                         }
                         dragAccumulator = 0f
                     },

@@ -8,12 +8,22 @@
         android:minSdkVersion="26"
         android:targetSdkVersion="34" />
 
-    <!-- Permissions required for a complete Android Launcher -->
+    <!-- Permissions for Launcher & Neo-Brutalist Control Center -->
     <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
     <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
     <permission
         android:name="com.salmantoha.neolauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -62,6 +72,17 @@
                 <data android:scheme="package" />
             </intent-filter>
         </receiver>
+
+        <!-- Neo-Brutalist Notification Interceptor Service -->
+        <service
+            android:name="com.salmantoha.neolauncher.controlcenter.NeoNotificationListener"
+            android:exported="true"
+            android:label="Neo Notifications"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
 
         <activity
             android:name="androidx.compose.ui.tooling.PreviewActivity"

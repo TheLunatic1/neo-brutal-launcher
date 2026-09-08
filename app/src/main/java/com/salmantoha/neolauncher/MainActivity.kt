@@ -20,6 +20,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.core.view.WindowCompat
+import com.salmantoha.neolauncher.controlcenter.ControlCenterManager
+import com.salmantoha.neolauncher.controlcenter.ui.NeoControlCenterScreen
 import com.salmantoha.neolauncher.model.AppItem
 import com.salmantoha.neolauncher.ui.components.NeoAppContextDialog
 import com.salmantoha.neolauncher.ui.drawer.AppDrawerScreen
@@ -28,11 +30,15 @@ import com.salmantoha.neolauncher.ui.theme.NeoBrutalLauncherTheme
 
 class MainActivity : ComponentActivity() {
 
+    private lateinit var controlCenterManager: ControlCenterManager
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         // Edge-to-Edge System Bars
         WindowCompat.setDecorFitsSystemWindows(window, false)
+
+        controlCenterManager = ControlCenterManager(this)
 
         setContent {
             NeoBrutalLauncherTheme {
@@ -41,11 +47,16 @@ class MainActivity : ComponentActivity() {
                 val pinnedApps by appRepository.pinnedApps.collectAsState()
 
                 var isDrawerOpen by remember { mutableStateOf(false) }
+                var isControlCenterOpen by remember { mutableStateOf(false) }
                 var selectedAppForContext by remember { mutableStateOf<AppItem?>(null) }
 
-                // Back gesture closes app drawer if open
-                BackHandler(enabled = isDrawerOpen) {
-                    isDrawerOpen = false
+                // Back gesture closes open panels
+                BackHandler(enabled = isDrawerOpen || isControlCenterOpen) {
+                    if (isControlCenterOpen) {
+                        isControlCenterOpen = false
+                    } else if (isDrawerOpen) {
+                        isDrawerOpen = false
+                    }
                 }
 
                 Box(modifier = Modifier.fillMaxSize()) {
@@ -62,8 +73,9 @@ class MainActivity : ComponentActivity() {
                         onOpenDrawer = {
                             isDrawerOpen = true
                         },
-                        onExpandNotifications = {
-                            expandNotificationShade()
+                        onOpenControlCenter = {
+                            controlCenterManager.checkAllStates()
+                            isControlCenterOpen = true
                         },
                         onOpenSettings = {
                             startActivity(Intent(Settings.ACTION_SETTINGS).apply {
@@ -72,7 +84,7 @@ class MainActivity : ComponentActivity() {
                         }
                     )
 
-                    // App Drawer Slide-in
+                    // App Drawer Slide-in from Bottom
                     AnimatedVisibility(
                         visible = isDrawerOpen,
                         enter = slideInVertically(initialOffsetY = { it }) + fadeIn(),
@@ -86,6 +98,20 @@ class MainActivity : ComponentActivity() {
                             },
                             onAppLongClick = { app ->
                                 selectedAppForContext = app
+                            }
+                        )
+                    }
+
+                    // Neo-Brutalist Control Center & Notifications Slide-in from Top
+                    AnimatedVisibility(
+                        visible = isControlCenterOpen,
+                        enter = slideInVertically(initialOffsetY = { -it }) + fadeIn(),
+                        exit = slideOutVertically(targetOffsetY = { -it }) + fadeOut()
+                    ) {
+                        NeoControlCenterScreen(
+                            manager = controlCenterManager,
+                            onClose = {
+                                isControlCenterOpen = false
                             }
                         )
                     }
@@ -113,15 +139,10 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    private fun expandNotificationShade() {
-        try {
-            @Suppress("WrongConstant")
-            val statusBarService = getSystemService("statusbar")
-            val statusBarManager = Class.forName("android.app.StatusBarManager")
-            val expand = statusBarManager.getMethod("expandNotificationsPanel")
-            expand.invoke(statusBarService)
-        } catch (e: Exception) {
-            // fallback
+    override fun onResume() {
+        super.onResume()
+        if (::controlCenterManager.isInitialized) {
+            controlCenterManager.checkAllStates()
         }
     }
 }

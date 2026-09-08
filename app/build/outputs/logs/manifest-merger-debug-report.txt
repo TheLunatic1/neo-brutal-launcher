@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:2:1-53:12
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:2:1-75:12
+INJECTED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:2:1-75:12
+INJECTED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:2:1-75:12
+INJECTED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:2:1-75:12
 MERGED from [androidx.compose.material3:material3-android:1.2.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\104a82dd4877da571e202d69a8d66059\transformed\material3-release\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.compose.material:material-android:1.6.6] C:\Users\Salman Toha\.gradle\caches\transforms-4\6ffadb99dbe7ce08a47789569854a49c\transformed\material-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material:material-icons-core-android:1.6.6] C:\Users\Salman Toha\.gradle\caches\transforms-4\46d7091f1880266a6ddd73b564f207c3\transformed\material-icons-core-release\AndroidManifest.xml:2:1-7:12
@@ -83,9 +83,51 @@ uses-permission#android.permission.SET_WALLPAPER
 ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:11:5-72
 	android:name
 		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:11:22-69
+uses-permission#android.permission.CAMERA
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:12:5-65
+	android:name
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:12:22-62
+uses-permission#android.permission.FLASHLIGHT
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:13:5-69
+	android:name
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:13:22-66
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:14:5-76
+	android:name
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:14:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:15:5-76
+	android:name
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:15:22-73
+uses-permission#android.permission.BLUETOOTH
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:16:5-68
+	android:name
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:16:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:17:5-74
+	android:name
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:17:22-71
+uses-permission#android.permission.BLUETOOTH_CONNECT
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:18:5-76
+	android:name
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:18:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:19:5-79
+	android:name
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:19:22-76
+uses-permission#android.permission.ACCESS_NOTIFICATION_POLICY
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:20:5-85
+	android:name
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:20:22-82
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:21:5-22:47
+	tools:ignore
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:22:9-44
+	android:name
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:21:22-70
 application
-ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:13:5-51:19
-INJECTED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:13:5-51:19
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:24:5-73:19
+INJECTED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:24:5-73:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\Salman Toha\.gradle\caches\transforms-4\638e7e3587cf5f50a493a3e147b72e0c\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\Salman Toha\.gradle\caches\transforms-4\638e7e3587cf5f50a493a3e147b72e0c\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\Salman Toha\.gradle\caches\transforms-4\1385045b6e73bfdafd4c6a6d7444df4d\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:22:5-26:19
@@ -107,75 +149,91 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Salman Toha\.gradl
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\c4714fff7b58584aa2e88eb5b66c9097\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:19:9-35
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:30:9-35
 	android:label
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:17:9-37
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:28:9-37
 	android:roundIcon
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:18:9-54
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:29:9-54
 	android:icon
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:16:9-43
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:27:9-43
 	android:allowBackup
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:26:9-35
 	android:theme
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:20:9-55
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:31:9-55
 	android:name
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:14:9-39
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:25:9-39
 activity#com.salmantoha.neolauncher.MainActivity
-ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:22:9-37:20
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:33:9-48:20
 	android:clearTaskOnLaunch
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:26:13-45
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:37:13-45
 	android:stateNotNeeded
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:27:13-42
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:38:13-42
 	android:launchMode
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:25:13-44
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:36:13-44
 	android:windowSoftInputMode
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:28:13-55
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:39:13-55
 	android:exported
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:24:13-36
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:35:13-36
 	android:name
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:23:13-41
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:34:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.HOME+category:name:android.intent.category.LAUNCHER
-ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:31:13-36:29
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:42:13-47:29
 action#android.intent.action.MAIN
-ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:32:17-69
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:43:17-69
 	android:name
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:32:25-66
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:43:25-66
 category#android.intent.category.HOME
-ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:33:17-73
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:44:17-73
 	android:name
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:33:27-70
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:44:27-70
 category#android.intent.category.DEFAULT
-ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:34:17-76
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:45:17-76
 	android:name
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:34:27-73
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:45:27-73
 category#android.intent.category.LAUNCHER
-ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:35:17-77
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:46:17-77
 	android:name
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:35:27-74
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:46:27-74
 receiver#com.salmantoha.neolauncher.data.PackageChangeReceiver
-ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:40:9-49:20
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:51:9-60:20
 	android:exported
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:42:13-36
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:53:13-36
 	android:name
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:41:13-55
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:52:13-55
 intent-filter#action:name:android.intent.action.PACKAGE_ADDED+action:name:android.intent.action.PACKAGE_REMOVED+action:name:android.intent.action.PACKAGE_REPLACED+data:scheme:package
-ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:43:13-48:29
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:54:13-59:29
 action#android.intent.action.PACKAGE_ADDED
-ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:44:17-78
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:55:17-78
 	android:name
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:44:25-75
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:55:25-75
 action#android.intent.action.PACKAGE_REMOVED
-ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:45:17-80
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:56:17-80
 	android:name
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:45:25-77
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:56:25-77
 action#android.intent.action.PACKAGE_REPLACED
-ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:46:17-81
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:57:17-81
 	android:name
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:46:25-78
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:57:25-78
 data
-ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:47:17-50
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:58:17-50
 	android:scheme
-		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:47:23-47
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:58:23-47
+service#com.salmantoha.neolauncher.controlcenter.NeoNotificationListener
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:63:9-71:19
+	android:label
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:65:13-46
+	android:exported
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:67:13-36
+	android:permission
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:66:13-87
+	android:name
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:64:13-66
+intent-filter#action:name:android.service.notification.NotificationListenerService
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:68:13-70:29
+action#android.service.notification.NotificationListenerService
+ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:69:17-99
+	android:name
+		ADDED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:69:25-96
 uses-sdk
 INJECTED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml
