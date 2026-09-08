@@ -1,18 +1,22 @@
 [
     {
-        "merged": "com.salmantoha.neolauncher.app-debug-46:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.salmantoha.neolauncher.app-main-48:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\Salman Toha\\.gradle\\daemon\\8.7\\com.salmantoha.neolauncher.app-debug-46:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Salman Toha\\.gradle\\daemon\\8.7\\com.salmantoha.neolauncher.app-main-48:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.salmantoha.neolauncher.app-debug-46:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.salmantoha.neolauncher.app-main-48:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.salmantoha.neolauncher.app-debug-46:/xml_accessibility_service_config.xml.flat",
+        "source": "com.salmantoha.neolauncher.app-main-48:/xml/accessibility_service_config.xml"
     },
     {
-        "merged": "com.salmantoha.neolauncher.app-debug-46:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.salmantoha.neolauncher.app-main-48:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Salman Toha\\.gradle\\daemon\\8.7\\com.salmantoha.neolauncher.app-debug-46:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Salman Toha\\.gradle\\daemon\\8.7\\com.salmantoha.neolauncher.app-main-48:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.salmantoha.neolauncher.app-debug-46:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.salmantoha.neolauncher.app-main-48:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\Salman Toha\\.gradle\\daemon\\8.7\\com.salmantoha.neolauncher.app-debug-46:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Salman Toha\\.gradle\\daemon\\8.7\\com.salmantoha.neolauncher.app-main-48:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Salman Toha\\.gradle\\daemon\\8.7\\com.salmantoha.neolauncher.app-debug-46:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Salman Toha\\.gradle\\daemon\\8.7\\com.salmantoha.neolauncher.app-main-48:\\drawable\\ic_launcher_foreground.xml"
     }
 ]

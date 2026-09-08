@@ -45,203 +45,230 @@
 23    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
 23-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:18:5-76
 23-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:18:22-73
-24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-24-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:19:5-79
-24-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:19:22-76
-25    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
-25-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:20:5-85
-25-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:20:22-82
-26    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-26-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:21:5-22:47
-26-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:21:22-70
-27
-28    <permission
-28-->[androidx.core:core:1.13.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\c4714fff7b58584aa2e88eb5b66c9097\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
-29        android:name="com.salmantoha.neolauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-29-->[androidx.core:core:1.13.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\c4714fff7b58584aa2e88eb5b66c9097\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
-30        android:protectionLevel="signature" />
-30-->[androidx.core:core:1.13.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\c4714fff7b58584aa2e88eb5b66c9097\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
-31
-32    <uses-permission android:name="com.salmantoha.neolauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-32-->[androidx.core:core:1.13.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\c4714fff7b58584aa2e88eb5b66c9097\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
-32-->[androidx.core:core:1.13.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\c4714fff7b58584aa2e88eb5b66c9097\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
-33
-34    <application
-34-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:24:5-73:19
-35        android:name="com.salmantoha.neolauncher.NeoLauncherApp"
-35-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:25:9-39
-36        android:allowBackup="true"
-36-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:26:9-35
-37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-37-->[androidx.core:core:1.13.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\c4714fff7b58584aa2e88eb5b66c9097\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
-38        android:debuggable="true"
-39        android:extractNativeLibs="false"
-40        android:icon="@mipmap/ic_launcher"
-40-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:27:9-43
-41        android:label="Neo Launcher"
-41-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:28:9-37
-42        android:roundIcon="@mipmap/ic_launcher_round"
-42-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:29:9-54
-43        android:supportsRtl="true"
-43-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:30:9-35
-44        android:theme="@style/Theme.NeoBrutalLauncher" >
-44-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:31:9-55
-45        <activity
-45-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:33:9-48:20
-46            android:name="com.salmantoha.neolauncher.MainActivity"
-46-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:34:13-41
-47            android:clearTaskOnLaunch="true"
-47-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:37:13-45
-48            android:exported="true"
-48-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:35:13-36
-49            android:launchMode="singleTask"
-49-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:36:13-44
-50            android:stateNotNeeded="true"
-50-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:38:13-42
-51            android:windowSoftInputMode="adjustResize" >
-51-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:39:13-55
-52
-53            <!-- Core Launcher Intent Filters -->
-54            <intent-filter>
-54-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:42:13-47:29
-55                <action android:name="android.intent.action.MAIN" />
-55-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:43:17-69
-55-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:43:25-66
-56
-57                <category android:name="android.intent.category.HOME" />
-57-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:44:17-73
-57-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:44:27-70
-58                <category android:name="android.intent.category.DEFAULT" />
-58-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:45:17-76
-58-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:45:27-73
-59                <category android:name="android.intent.category.LAUNCHER" />
-59-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:46:17-77
-59-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:46:27-74
-60            </intent-filter>
-61        </activity>
-62
-63        <!-- Receiver to dynamically update app list on install/uninstall -->
-64        <receiver
-64-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:51:9-60:20
-65            android:name="com.salmantoha.neolauncher.data.PackageChangeReceiver"
-65-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:52:13-55
-66            android:exported="true" >
-66-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:53:13-36
-67            <intent-filter>
-67-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:54:13-59:29
-68                <action android:name="android.intent.action.PACKAGE_ADDED" />
-68-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:55:17-78
-68-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:55:25-75
-69                <action android:name="android.intent.action.PACKAGE_REMOVED" />
-69-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:56:17-80
-69-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:56:25-77
-70                <action android:name="android.intent.action.PACKAGE_REPLACED" />
-70-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:57:17-81
-70-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:57:25-78
-71
-72                <data android:scheme="package" />
-72-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:58:17-50
-72-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:58:23-47
-73            </intent-filter>
-74        </receiver>
-75
-76        <!-- Neo-Brutalist Notification Interceptor Service -->
-77        <service
-77-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:63:9-71:19
-78            android:name="com.salmantoha.neolauncher.controlcenter.NeoNotificationListener"
-78-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:64:13-66
-79            android:exported="true"
-79-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:67:13-36
-80            android:label="Neo Notifications"
-80-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:65:13-46
-81            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
-81-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:66:13-87
-82            <intent-filter>
-82-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:68:13-70:29
-83                <action android:name="android.service.notification.NotificationListenerService" />
-83-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:69:17-99
-83-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:69:25-96
-84            </intent-filter>
-85        </service>
-86
-87        <activity
-87-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\Salman Toha\.gradle\caches\transforms-4\638e7e3587cf5f50a493a3e147b72e0c\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
-88            android:name="androidx.compose.ui.tooling.PreviewActivity"
-88-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\Salman Toha\.gradle\caches\transforms-4\638e7e3587cf5f50a493a3e147b72e0c\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
-89            android:exported="true" />
-89-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\Salman Toha\.gradle\caches\transforms-4\638e7e3587cf5f50a493a3e147b72e0c\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
-90        <activity
-90-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\Salman Toha\.gradle\caches\transforms-4\1385045b6e73bfdafd4c6a6d7444df4d\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:23:9-25:39
-91            android:name="androidx.activity.ComponentActivity"
-91-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\Salman Toha\.gradle\caches\transforms-4\1385045b6e73bfdafd4c6a6d7444df4d\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:24:13-63
-92            android:exported="true" />
-92-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\Salman Toha\.gradle\caches\transforms-4\1385045b6e73bfdafd4c6a6d7444df4d\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:25:13-36
-93
-94        <provider
-94-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Salman Toha\.gradle\caches\transforms-4\14b5c132658a8d5c5f6c87244f57b75c\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-95            android:name="androidx.startup.InitializationProvider"
-95-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Salman Toha\.gradle\caches\transforms-4\14b5c132658a8d5c5f6c87244f57b75c\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-96            android:authorities="com.salmantoha.neolauncher.androidx-startup"
-96-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Salman Toha\.gradle\caches\transforms-4\14b5c132658a8d5c5f6c87244f57b75c\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-97            android:exported="false" >
-97-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Salman Toha\.gradle\caches\transforms-4\14b5c132658a8d5c5f6c87244f57b75c\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-98            <meta-data
-98-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Salman Toha\.gradle\caches\transforms-4\14b5c132658a8d5c5f6c87244f57b75c\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-99                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-99-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Salman Toha\.gradle\caches\transforms-4\14b5c132658a8d5c5f6c87244f57b75c\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-100                android:value="androidx.startup" />
-100-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Salman Toha\.gradle\caches\transforms-4\14b5c132658a8d5c5f6c87244f57b75c\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-101            <meta-data
-101-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Salman Toha\.gradle\caches\transforms-4\b45d59810e445beadcd52d88228851ef\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
-102                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-102-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Salman Toha\.gradle\caches\transforms-4\b45d59810e445beadcd52d88228851ef\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
-103                android:value="androidx.startup" />
-103-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Salman Toha\.gradle\caches\transforms-4\b45d59810e445beadcd52d88228851ef\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
-104            <meta-data
-104-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-105                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-105-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-106                android:value="androidx.startup" />
-106-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-107        </provider>
+24    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+24-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:19:5-78
+24-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:19:22-75
+25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+25-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:20:5-79
+25-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:20:22-76
+26    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+26-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:21:5-85
+26-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:21:22-82
+27    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+27-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:22:5-23:47
+27-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:22:22-70
+28
+29    <permission
+29-->[androidx.core:core:1.13.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\c4714fff7b58584aa2e88eb5b66c9097\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+30        android:name="com.salmantoha.neolauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+30-->[androidx.core:core:1.13.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\c4714fff7b58584aa2e88eb5b66c9097\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+31        android:protectionLevel="signature" />
+31-->[androidx.core:core:1.13.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\c4714fff7b58584aa2e88eb5b66c9097\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+32
+33    <uses-permission android:name="com.salmantoha.neolauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+33-->[androidx.core:core:1.13.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\c4714fff7b58584aa2e88eb5b66c9097\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+33-->[androidx.core:core:1.13.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\c4714fff7b58584aa2e88eb5b66c9097\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+34
+35    <application
+35-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:25:5-87:19
+36        android:name="com.salmantoha.neolauncher.NeoLauncherApp"
+36-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:26:9-39
+37        android:allowBackup="true"
+37-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:27:9-35
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.13.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\c4714fff7b58584aa2e88eb5b66c9097\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+39        android:debuggable="true"
+40        android:extractNativeLibs="false"
+41        android:icon="@mipmap/ic_launcher"
+41-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:28:9-43
+42        android:label="Neo Launcher"
+42-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:29:9-37
+43        android:roundIcon="@mipmap/ic_launcher_round"
+43-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:30:9-54
+44        android:supportsRtl="true"
+44-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:31:9-35
+45        android:theme="@style/Theme.NeoBrutalLauncher" >
+45-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:32:9-55
+46        <activity
+46-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:34:9-49:20
+47            android:name="com.salmantoha.neolauncher.MainActivity"
+47-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:35:13-41
+48            android:clearTaskOnLaunch="true"
+48-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:38:13-45
+49            android:exported="true"
+49-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:36:13-36
+50            android:launchMode="singleTask"
+50-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:37:13-44
+51            android:stateNotNeeded="true"
+51-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:39:13-42
+52            android:windowSoftInputMode="adjustResize" >
+52-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:40:13-55
+53
+54            <!-- Core Launcher Intent Filters -->
+55            <intent-filter>
+55-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:43:13-48:29
+56                <action android:name="android.intent.action.MAIN" />
+56-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:44:17-69
+56-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:44:25-66
+57
+58                <category android:name="android.intent.category.HOME" />
+58-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:45:17-73
+58-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:45:27-70
+59                <category android:name="android.intent.category.DEFAULT" />
+59-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:46:17-76
+59-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:46:27-73
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:47:17-77
+60-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:47:27-74
+61            </intent-filter>
+62        </activity>
+63
+64        <!-- Receiver to dynamically update app list on install/uninstall -->
+65        <receiver
+65-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:52:9-61:20
+66            android:name="com.salmantoha.neolauncher.data.PackageChangeReceiver"
+66-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:53:13-55
+67            android:exported="true" >
+67-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:54:13-36
+68            <intent-filter>
+68-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:55:13-60:29
+69                <action android:name="android.intent.action.PACKAGE_ADDED" />
+69-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:56:17-78
+69-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:56:25-75
+70                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+70-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:57:17-80
+70-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:57:25-77
+71                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+71-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:58:17-81
+71-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:58:25-78
+72
+73                <data android:scheme="package" />
+73-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:59:17-50
+73-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:59:23-47
+74            </intent-filter>
+75        </receiver>
+76
+77        <!-- Neo-Brutalist Notification Interceptor Service -->
+78        <service
+78-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:64:9-72:19
+79            android:name="com.salmantoha.neolauncher.controlcenter.NeoNotificationListener"
+79-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:65:13-66
+80            android:exported="true"
+80-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:68:13-36
+81            android:label="Neo Notifications"
+81-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:66:13-46
+82            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+82-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:67:13-87
+83            <intent-filter>
+83-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:69:13-71:29
+84                <action android:name="android.service.notification.NotificationListenerService" />
+84-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:70:17-99
+84-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:70:25-96
+85            </intent-filter>
+86        </service>
+87
+88        <!-- Neo-Brutalist System-Wide Gesture Accessibility Service -->
+89        <service
+89-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:75:9-85:19
+90            android:name="com.salmantoha.neolauncher.controlcenter.NeoAccessibilityService"
+90-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:76:13-66
+91            android:exported="true"
+91-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:78:13-36
+92            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+92-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:77:13-79
+93            <intent-filter>
+93-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:79:13-81:29
+94                <action android:name="android.accessibilityservice.AccessibilityService" />
+94-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:80:17-92
+94-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:80:25-89
+95            </intent-filter>
+96
+97            <meta-data
+97-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:82:13-84:72
+98                android:name="android.accessibilityservice"
+98-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:83:17-60
+99                android:resource="@xml/accessibility_service_config" />
+99-->D:\REPOSITORIES\neo-brutal-launcher\app\src\main\AndroidManifest.xml:84:17-69
+100        </service>
+101
+102        <activity
+102-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\Salman Toha\.gradle\caches\transforms-4\638e7e3587cf5f50a493a3e147b72e0c\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+103            android:name="androidx.compose.ui.tooling.PreviewActivity"
+103-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\Salman Toha\.gradle\caches\transforms-4\638e7e3587cf5f50a493a3e147b72e0c\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+104            android:exported="true" />
+104-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\Salman Toha\.gradle\caches\transforms-4\638e7e3587cf5f50a493a3e147b72e0c\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+105        <activity
+105-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\Salman Toha\.gradle\caches\transforms-4\1385045b6e73bfdafd4c6a6d7444df4d\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:23:9-25:39
+106            android:name="androidx.activity.ComponentActivity"
+106-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\Salman Toha\.gradle\caches\transforms-4\1385045b6e73bfdafd4c6a6d7444df4d\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:24:13-63
+107            android:exported="true" />
+107-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\Salman Toha\.gradle\caches\transforms-4\1385045b6e73bfdafd4c6a6d7444df4d\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:25:13-36
 108
-109        <receiver
-109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-110            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-111            android:directBootAware="false"
-111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-112            android:enabled="true"
-112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-113            android:exported="true"
-113-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-114            android:permission="android.permission.DUMP" >
-114-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-115            <intent-filter>
-115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-116                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-117            </intent-filter>
-118            <intent-filter>
-118-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-119                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-120            </intent-filter>
-121            <intent-filter>
-121-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-122                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-122-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-122-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-123            </intent-filter>
-124            <intent-filter>
-124-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-125                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-126            </intent-filter>
-127        </receiver>
-128    </application>
-129
-130</manifest>
+109        <provider
+109-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Salman Toha\.gradle\caches\transforms-4\14b5c132658a8d5c5f6c87244f57b75c\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+110            android:name="androidx.startup.InitializationProvider"
+110-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Salman Toha\.gradle\caches\transforms-4\14b5c132658a8d5c5f6c87244f57b75c\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+111            android:authorities="com.salmantoha.neolauncher.androidx-startup"
+111-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Salman Toha\.gradle\caches\transforms-4\14b5c132658a8d5c5f6c87244f57b75c\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+112            android:exported="false" >
+112-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Salman Toha\.gradle\caches\transforms-4\14b5c132658a8d5c5f6c87244f57b75c\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+113            <meta-data
+113-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Salman Toha\.gradle\caches\transforms-4\14b5c132658a8d5c5f6c87244f57b75c\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+114                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+114-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Salman Toha\.gradle\caches\transforms-4\14b5c132658a8d5c5f6c87244f57b75c\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+115                android:value="androidx.startup" />
+115-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Salman Toha\.gradle\caches\transforms-4\14b5c132658a8d5c5f6c87244f57b75c\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+116            <meta-data
+116-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Salman Toha\.gradle\caches\transforms-4\b45d59810e445beadcd52d88228851ef\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+117                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+117-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Salman Toha\.gradle\caches\transforms-4\b45d59810e445beadcd52d88228851ef\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+118                android:value="androidx.startup" />
+118-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Salman Toha\.gradle\caches\transforms-4\b45d59810e445beadcd52d88228851ef\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+119            <meta-data
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+120                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+121                android:value="androidx.startup" />
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+122        </provider>
+123
+124        <receiver
+124-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+125            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+126            android:directBootAware="false"
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+127            android:enabled="true"
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+128            android:exported="true"
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+129            android:permission="android.permission.DUMP" >
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+130            <intent-filter>
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+131                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+132            </intent-filter>
+133            <intent-filter>
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+134                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+135            </intent-filter>
+136            <intent-filter>
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+137                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+138            </intent-filter>
+139            <intent-filter>
+139-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+140                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Salman Toha\.gradle\caches\transforms-4\fdbef518c37dd966e84171f509b76554\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+141            </intent-filter>
+142        </receiver>
+143    </application>
+144
+145</manifest>

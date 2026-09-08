@@ -6,4 +6,5 @@
     <string name="unpin_from_home">UNPIN</string>
     <string name="app_info">APP INFO</string>
     <string name="uninstall">UNINSTALL</string>
+    <string name="accessibility_service_desc">Enables the Neo-Brutalist Control Center swipe-down gesture across all apps and screens.</string>
 </resources>

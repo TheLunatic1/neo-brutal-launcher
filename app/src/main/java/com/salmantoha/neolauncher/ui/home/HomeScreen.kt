@@ -2,8 +2,6 @@ package com.salmantoha.neolauncher.ui.home
 
 import android.content.Context
 import android.content.Intent
-import android.content.IntentFilter
-import android.os.BatteryManager
 import android.provider.AlarmClock
 import androidx.compose.foundation.background
 import androidx.compose.foundation.gestures.Orientation
@@ -26,11 +24,9 @@ import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
@@ -39,7 +35,6 @@ import com.salmantoha.neolauncher.ui.components.NeoAppIcon
 import com.salmantoha.neolauncher.ui.components.NeoDotGridBackground
 import com.salmantoha.neolauncher.ui.components.NeoFloatingDock
 import com.salmantoha.neolauncher.ui.components.NeoHeroClockCard
-import com.salmantoha.neolauncher.ui.components.NeoTelemetryBar
 import com.salmantoha.neolauncher.ui.components.NeoWeatherCard
 import com.salmantoha.neolauncher.ui.theme.BgAmoled
 import kotlinx.coroutines.delay
@@ -54,8 +49,6 @@ fun HomeScreen(
     onAppClick: (AppItem) -> Unit,
     onAppLongClick: (AppItem) -> Unit,
     onOpenDrawer: () -> Unit,
-    onOpenControlCenter: () -> Unit,
-    onOpenSettings: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val context = LocalContext.current
@@ -79,23 +72,6 @@ fun HomeScreen(
         }
     }
 
-    // Battery Telemetry
-    var batteryLevel by remember { mutableIntStateOf(100) }
-    var isCharging by remember { mutableStateOf(false) }
-
-    LaunchedEffect(Unit) {
-        val batteryStatus: Intent? = IntentFilter(Intent.ACTION_BATTERY_CHANGED).let { ifilter ->
-            context.registerReceiver(null, ifilter)
-        }
-        batteryStatus?.let { intent ->
-            val level = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, -1)
-            val scale = intent.getIntExtra(BatteryManager.EXTRA_SCALE, -1)
-            batteryLevel = if (level != -1 && scale != -1) (level * 100 / scale) else 100
-            val status = intent.getIntExtra(BatteryManager.EXTRA_STATUS, -1)
-            isCharging = status == BatteryManager.BATTERY_STATUS_CHARGING || status == BatteryManager.BATTERY_STATUS_FULL
-        }
-    }
-
     var dragOffsetY by remember { mutableStateOf(0f) }
 
     Box(
@@ -114,8 +90,6 @@ fun HomeScreen(
                     onDragStopped = {
                         if (dragOffsetY < -60f) {
                             onOpenDrawer()
-                        } else if (dragOffsetY > 60f) {
-                            onOpenControlCenter()
                         }
                         dragOffsetY = 0f
                     }
@@ -127,27 +101,16 @@ fun HomeScreen(
                 .fillMaxSize()
                 .statusBarsPadding()
                 .navigationBarsPadding()
-                .padding(top = 8.dp, bottom = 8.dp),
+                .padding(top = 16.dp, bottom = 8.dp),
             verticalArrangement = Arrangement.SpaceBetween
         ) {
             Column(modifier = Modifier.fillMaxWidth()) {
-                // Top Status & Telemetry Bar
-                NeoTelemetryBar(
-                    batteryLevel = batteryLevel,
-                    isCharging = isCharging,
-                    appCount = allApps.size,
-                    onControlCenterClick = onOpenControlCenter,
-                    onSettingsClick = onOpenSettings
-                )
-
-                Spacer(modifier = Modifier.height(12.dp))
-
                 // Hero Widgets Row (Clock 2x2 + Weather 2x2)
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(horizontal = 16.dp)
-                        .height(130.dp),
+                        .height(134.dp),
                     horizontalArrangement = Arrangement.spacedBy(14.dp)
                 ) {
                     NeoHeroClockCard(
@@ -173,12 +136,12 @@ fun HomeScreen(
                         humidity = "64%",
                         modifier = Modifier.weight(1f),
                         onClick = {
-                            onOpenControlCenter()
+                            // Weather widget tap
                         }
                     )
                 }
 
-                Spacer(modifier = Modifier.height(18.dp))
+                Spacer(modifier = Modifier.height(24.dp))
 
                 // 4-Column Pinned App Grid
                 LazyVerticalGrid(
@@ -186,7 +149,7 @@ fun HomeScreen(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(horizontal = 12.dp),
-                    verticalArrangement = Arrangement.spacedBy(8.dp),
+                    verticalArrangement = Arrangement.spacedBy(10.dp),
                     horizontalArrangement = Arrangement.spacedBy(4.dp)
                 ) {
                     val displayApps = if (pinnedApps.isNotEmpty()) pinnedApps else allApps.take(8)

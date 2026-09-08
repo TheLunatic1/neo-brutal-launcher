@@ -619,7 +619,7 @@ fun NeoFloatingDock(
     NeoBrutalCard(
         modifier = modifier
             .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 12.dp),
+            .padding(horizontal = 14.dp, vertical = 8.dp),
         backgroundColor = CardBg,
         borderColor = CardBorder,
         borderWidth = 2.dp,
@@ -629,28 +629,42 @@ fun NeoFloatingDock(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 8.dp, vertical = 8.dp),
-            horizontalArrangement = Arrangement.SpaceAround,
+                .padding(horizontal = 12.dp, vertical = 10.dp),
+            horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically
         ) {
             dockApps.take(4).forEach { app ->
-                NeoAppIcon(
-                    app = app,
-                    showLabel = false,
-                    modifier = Modifier.size(52.dp),
+                NeoBrutalCard(
+                    modifier = Modifier.size(54.dp),
+                    backgroundColor = CardBg,
+                    borderColor = CardBorder,
+                    borderWidth = 2.dp,
+                    shadowOffset = 3.dp,
+                    cornerRadius = 16.dp,
                     onClick = { onAppClick(app) },
                     onLongClick = { onAppLongClick(app) }
-                )
+                ) {
+                    Box(
+                        modifier = Modifier.fillMaxSize(),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Image(
+                            painter = rememberDrawablePainter(drawable = app.icon),
+                            contentDescription = app.label,
+                            modifier = Modifier.size(36.dp)
+                        )
+                    }
+                }
             }
 
             // Dedicated Neo-Brutalist App Drawer Button
             NeoBrutalCard(
-                modifier = Modifier.size(48.dp),
+                modifier = Modifier.size(54.dp),
                 backgroundColor = AccentIndigo,
                 borderColor = Color.White,
                 borderWidth = 2.dp,
-                shadowOffset = 2.dp,
-                cornerRadius = 14.dp,
+                shadowOffset = 3.dp,
+                cornerRadius = 16.dp,
                 onClick = onOpenDrawer
             ) {
                 Box(
@@ -661,7 +675,7 @@ fun NeoFloatingDock(
                         imageVector = Icons.Default.Apps,
                         contentDescription = "App Drawer",
                         tint = Color.White,
-                        modifier = Modifier.size(24.dp)
+                        modifier = Modifier.size(26.dp)
                     )
                 }
             }
