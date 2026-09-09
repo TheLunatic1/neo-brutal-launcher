@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Accent 1: Electric Indigo (#6366f1) -->
+    <color name="system_accent1_0_dark">#ffffff</color>
+    <color name="system_accent1_10_dark">#eef2ff</color>
+    <color name="system_accent1_50_dark">#e0e7ff</color>
+    <color name="system_accent1_100_dark">#c7d2fe</color>
+    <color name="system_accent1_200_dark">#6366f1</color>
+    <color name="system_accent1_300_dark">#818cf8</color>
+    <color name="system_accent1_400_dark">#6366f1</color>
+    <color name="system_accent1_500_dark">#4f46e5</color>
+    <color name="system_accent1_600_dark">#4338ca</color>
+    <color name="system_accent1_700_dark">#3730a3</color>
+    <color name="system_accent1_800_dark">#1e1b4b</color>
+    <color name="system_accent1_900_dark">#0f172a</color>
+    <color name="system_accent1_1000_dark">#000000</color>
+
+    <color name="system_accent1_0_light">#ffffff</color>
+    <color name="system_accent1_10_light">#eef2ff</color>
+    <color name="system_accent1_50_light">#e0e7ff</color>
+    <color name="system_accent1_100_light">#c7d2fe</color>
+    <color name="system_accent1_200_light">#6366f1</color>
+    <color name="system_accent1_300_light">#818cf8</color>
+    <color name="system_accent1_400_light">#6366f1</color>
+    <color name="system_accent1_500_light">#4f46e5</color>
+    <color name="system_accent1_600_light">#4338ca</color>
+    <color name="system_accent1_700_light">#3730a3</color>
+    <color name="system_accent1_800_light">#1e1b4b</color>
+    <color name="system_accent1_900_light">#0f172a</color>
+    <color name="system_accent1_1000_light">#000000</color>
+
+    <!-- Accent 2: Solar Amber (#fbbf24) -->
+    <color name="system_accent2_0_dark">#ffffff</color>
+    <color name="system_accent2_10_dark">#fffbeb</color>
+    <color name="system_accent2_50_dark">#fef3c7</color>
+    <color name="system_accent2_100_dark">#fde68a</color>
+    <color name="system_accent2_200_dark">#fbbf24</color>
+    <color name="system_accent2_300_dark">#f59e0b</color>
+    <color name="system_accent2_400_dark">#d97706</color>
+    <color name="system_accent2_500_dark">#b45309</color>
+    <color name="system_accent2_600_dark">#92400e</color>
+    <color name="system_accent2_700_dark">#78350f</color>
+    <color name="system_accent2_800_dark">#451a03</color>
+    <color name="system_accent2_900_dark">#1e1b4b</color>
+    <color name="system_accent2_1000_dark">#000000</color>
+
+    <color name="system_accent2_0_light">#ffffff</color>
+    <color name="system_accent2_10_light">#fffbeb</color>
+    <color name="system_accent2_50_light">#fef3c7</color>
+    <color name="system_accent2_100_light">#fde68a</color>
+    <color name="system_accent2_200_light">#fbbf24</color>
+    <color name="system_accent2_300_light">#f59e0b</color>
+    <color name="system_accent2_400_light">#d97706</color>
+    <color name="system_accent2_500_light">#b45309</color>
+    <color name="system_accent2_600_light">#92400e</color>
+    <color name="system_accent2_700_light">#78350f</color>
+    <color name="system_accent2_800_light">#451a03</color>
+    <color name="system_accent2_900_light">#1e1b4b</color>
+    <color name="system_accent2_1000_light">#000000</color>
+
+    <!-- Accent 3: Emerald Mint (#34d399) -->
+    <color name="system_accent3_0_dark">#ffffff</color>
+    <color name="system_accent3_10_dark">#ecfdf5</color>
+    <color name="system_accent3_50_dark">#d1fae5</color>
+    <color name="system_accent3_100_dark">#a7f3d0</color>
+    <color name="system_accent3_200_dark">#34d399</color>
+    <color name="system_accent3_300_dark">#10b981</color>
+    <color name="system_accent3_400_dark">#059669</color>
+    <color name="system_accent3_500_dark">#047857</color>
+    <color name="system_accent3_600_dark">#065f46</color>
+    <color name="system_accent3_700_dark">#064e3b</color>
+    <color name="system_accent3_800_dark">#022c22</color>
+    <color name="system_accent3_900_dark">#061a14</color>
+    <color name="system_accent3_1000_dark">#000000</color>
+
+    <color name="system_accent3_0_light">#ffffff</color>
+    <color name="system_accent3_10_light">#ecfdf5</color>
+    <color name="system_accent3_50_light">#d1fae5</color>
+    <color name="system_accent3_100_light">#a7f3d0</color>
+    <color name="system_accent3_200_light">#34d399</color>
+    <color name="system_accent3_300_light">#10b981</color>
+    <color name="system_accent3_400_light">#059669</color>
+    <color name="system_accent3_500_light">#047857</color>
+    <color name="system_accent3_600_light">#065f46</color>
+    <color name="system_accent3_700_light">#064e3b</color>
+    <color name="system_accent3_800_light">#022c22</color>
+    <color name="system_accent3_900_light">#061a14</color>
+    <color name="system_accent3_1000_light">#000000</color>
+
+    <!-- Neutral 1: AMOLED Surface & Card Slate (#0b0f19, #141d2e) -->
+    <color name="system_neutral1_0_dark">#ffffff</color>
+    <color name="system_neutral1_10_dark">#f8fafc</color>
+    <color name="system_neutral1_50_dark">#f1f5f9</color>
+    <color name="system_neutral1_100_dark">#e2e8f0</color>
+    <color name="system_neutral1_200_dark">#cbd5e1</color>
+    <color name="system_neutral1_300_dark">#94a3b8</color>
+    <color name="system_neutral1_400_dark">#64748b</color>
+    <color name="system_neutral1_500_dark">#475569</color>
+    <color name="system_neutral1_600_dark">#334155</color>
+    <color name="system_neutral1_700_dark">#1e293b</color>
+    <color name="system_neutral1_800_dark">#141d2e</color>
+    <color name="system_neutral1_900_dark">#0b0f19</color>
+    <color name="system_neutral1_1000_dark">#000000</color>
+
+    <color name="system_neutral1_0_light">#ffffff</color>
+    <color name="system_neutral1_10_light">#f8fafc</color>
+    <color name="system_neutral1_50_light">#f1f5f9</color>
+    <color name="system_neutral1_100_light">#e2e8f0</color>
+    <color name="system_neutral1_200_light">#cbd5e1</color>
+    <color name="system_neutral1_300_light">#94a3b8</color>
+    <color name="system_neutral1_400_light">#64748b</color>
+    <color name="system_neutral1_500_light">#475569</color>
+    <color name="system_neutral1_600_light">#334155</color>
+    <color name="system_neutral1_700_light">#1e293b</color>
+    <color name="system_neutral1_800_light">#141d2e</color>
+    <color name="system_neutral1_900_light">#0b0f19</color>
+    <color name="system_neutral1_1000_light">#000000</color>
+
+    <!-- Neutral 2: Secondary Elements & Inactive Tiles (#141d2e, #1e293b) -->
+    <color name="system_neutral2_0_dark">#ffffff</color>
+    <color name="system_neutral2_10_dark">#f8fafc</color>
+    <color name="system_neutral2_50_dark">#f1f5f9</color>
+    <color name="system_neutral2_100_dark">#e2e8f0</color>
+    <color name="system_neutral2_200_dark">#cbd5e1</color>
+    <color name="system_neutral2_300_dark">#94a3b8</color>
+    <color name="system_neutral2_400_dark">#64748b</color>
+    <color name="system_neutral2_500_dark">#475569</color>
+    <color name="system_neutral2_600_dark">#334155</color>
+    <color name="system_neutral2_700_dark">#1e293b</color>
+    <color name="system_neutral2_800_dark">#141d2e</color>
+    <color name="system_neutral2_900_dark">#0b0f19</color>
+    <color name="system_neutral2_1000_dark">#000000</color>
+
+    <color name="system_neutral2_0_light">#ffffff</color>
+    <color name="system_neutral2_10_light">#f8fafc</color>
+    <color name="system_neutral2_50_light">#f1f5f9</color>
+    <color name="system_neutral2_100_light">#e2e8f0</color>
+    <color name="system_neutral2_200_light">#cbd5e1</color>
+    <color name="system_neutral2_300_light">#94a3b8</color>
+    <color name="system_neutral2_400_light">#64748b</color>
+    <color name="system_neutral2_500_light">#475569</color>
+    <color name="system_neutral2_600_light">#334155</color>
+    <color name="system_neutral2_700_light">#1e293b</color>
+    <color name="system_neutral2_800_light">#141d2e</color>
+    <color name="system_neutral2_900_light">#0b0f19</color>
+    <color name="system_neutral2_1000_light">#000000</color>
+</resources>
