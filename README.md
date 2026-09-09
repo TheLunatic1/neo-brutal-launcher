@@ -80,9 +80,9 @@ neo-brutal-launcher/
 ## 🛠️ Building & Running
 
 ### Prerequisites
-* Android Studio Iguana / Hedgehog or newer
-* Android SDK 34 (Android 14)
-* Java JDK 17
+* Android Studio
+* Android SDK
+* Java JDK
 
 ### Build Command
 ```bash
