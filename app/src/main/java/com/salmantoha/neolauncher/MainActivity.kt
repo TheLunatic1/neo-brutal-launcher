@@ -19,7 +19,10 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.core.view.WindowCompat
+import com.salmantoha.neolauncher.controlcenter.ControlCenterManager
+import com.salmantoha.neolauncher.controlcenter.ui.NeoControlCenterScreen
 import com.salmantoha.neolauncher.model.AppItem
 import com.salmantoha.neolauncher.ui.components.NeoAppContextDialog
 import com.salmantoha.neolauncher.ui.drawer.AppDrawerScreen
@@ -36,16 +39,23 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             NeoBrutalLauncherTheme {
+                val context = LocalContext.current
                 val appRepository = (application as NeoLauncherApp).appRepository
                 val allApps by appRepository.allApps.collectAsState()
                 val pinnedApps by appRepository.pinnedApps.collectAsState()
 
+                val controlCenterManager = remember { ControlCenterManager(context) }
                 var isDrawerOpen by remember { mutableStateOf(false) }
+                var isControlCenterOpen by remember { mutableStateOf(false) }
                 var selectedAppForContext by remember { mutableStateOf<AppItem?>(null) }
 
-                // Back gesture closes app drawer if open
-                BackHandler(enabled = isDrawerOpen) {
-                    isDrawerOpen = false
+                // Back gesture closes app drawer or control center if open
+                BackHandler(enabled = isDrawerOpen || isControlCenterOpen) {
+                    if (isControlCenterOpen) {
+                        isControlCenterOpen = false
+                    } else if (isDrawerOpen) {
+                        isDrawerOpen = false
+                    }
                 }
 
                 Box(modifier = Modifier.fillMaxSize()) {
@@ -61,6 +71,10 @@ class MainActivity : ComponentActivity() {
                         },
                         onOpenDrawer = {
                             isDrawerOpen = true
+                        },
+                        onOpenControlCenter = {
+                            controlCenterManager.checkAllStates()
+                            isControlCenterOpen = true
                         }
                     )
 
@@ -81,6 +95,20 @@ class MainActivity : ComponentActivity() {
                             },
                             onClose = {
                                 isDrawerOpen = false
+                            }
+                        )
+                    }
+
+                    // Control Center Slide-down from Top
+                    AnimatedVisibility(
+                        visible = isControlCenterOpen,
+                        enter = slideInVertically(initialOffsetY = { -it }) + fadeIn(),
+                        exit = slideOutVertically(targetOffsetY = { -it }) + fadeOut()
+                    ) {
+                        NeoControlCenterScreen(
+                            manager = controlCenterManager,
+                            onClose = {
+                                isControlCenterOpen = false
                             }
                         )
                     }

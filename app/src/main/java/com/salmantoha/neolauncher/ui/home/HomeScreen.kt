@@ -49,6 +49,7 @@ fun HomeScreen(
     onAppClick: (AppItem) -> Unit,
     onAppLongClick: (AppItem) -> Unit,
     onOpenDrawer: () -> Unit,
+    onOpenControlCenter: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val context = LocalContext.current
@@ -88,8 +89,10 @@ fun HomeScreen(
                         dragOffsetY += delta
                     },
                     onDragStopped = {
-                        if (dragOffsetY < -60f) {
-                            onOpenDrawer()
+                        if (dragOffsetY < -50f) {
+                            onOpenDrawer() // Swipe up
+                        } else if (dragOffsetY > 50f) {
+                            onOpenControlCenter() // Swipe down
                         }
                         dragOffsetY = 0f
                     }
@@ -119,14 +122,7 @@ fun HomeScreen(
                         amPmString = if (amPm.isEmpty()) "PM" else amPm,
                         modifier = Modifier.weight(1f),
                         onClick = {
-                            try {
-                                val clockIntent = Intent(AlarmClock.ACTION_SHOW_ALARMS).apply {
-                                    flags = Intent.FLAG_ACTIVITY_NEW_TASK
-                                }
-                                context.startActivity(clockIntent)
-                            } catch (e: Exception) {
-                                // fallback
-                            }
+                            onOpenControlCenter()
                         }
                     )
 
@@ -136,7 +132,7 @@ fun HomeScreen(
                         humidity = "64%",
                         modifier = Modifier.weight(1f),
                         onClick = {
-                            // Weather widget tap
+                            onOpenControlCenter()
                         }
                     )
                 }
